@@ -20,6 +20,7 @@ sudo ufw allow 2346
 sudo ufw allow 2347
 sudo ufw allow 'Apache Full'
 
+sudo cp /home/steam/valheim-server/web/index.html /var/www/html
 sudo mkdir /var/www/html/downloads
 
 mkdir /home/steam/logs
