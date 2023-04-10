@@ -14,7 +14,7 @@ sudo apt update && sudo apt upgrade -y && sudo apt autoremove -y
 
 #Update game
 
-/home/steam/scripts/InstallUpdate.sh
+/home/steam/valheim-server/scripts/InstallUpdate.sh
 
 #Reboot
 
