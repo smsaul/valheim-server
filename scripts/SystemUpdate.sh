@@ -2,9 +2,9 @@
 
 
 #Backup worlds
-tar -cvf worlds-$(date -I).tar /home/steam/.config/unity3d/IronGate/Valheim/worlds/helsinki.*
+tar -cvf worlds-$(date -I).tar /home/steam/.config/unity3d/IronGate/Valheim/worlds_local
 
-chmod 777 worlds$(date -I).tar
+chmod 777 worlds-$(date -I).tar
 
 #Prompt to continue after files are copied (Press any key...)
 
@@ -19,5 +19,7 @@ sudo apt update && sudo apt upgrade -y && sudo apt autoremove -y
 /home/steam/scripts/InstallUpdate.sh
 
 #Reboot
+
+read -p 'Press Enter to reboot...' input
 
 sudo reboot

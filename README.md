@@ -43,18 +43,16 @@ The user can download a copy of the world at any time. An Apache server facilita
 
 ### Logs
 
-Logs are maintained (of course).
-
 The `~/logs` directory contains a symlink to the connection log created by Steam and a server log text file.
 
-Connection logs: `~/logs/connections.txt`, symlink to `~/.steam/logs/connection_log_<port>.txt`
+Connection logs (Steam users): `~/logs/connections.txt`, symlink to `~/.steam/logs/connection_log_<port>.txt`
 
-Server logs: `~/logs/serverlog.txt`
+Server logs (game diag/errors): `~/logs/serverlog.txt`
 
-It can be stopped by pressing `CTRL-C`.
+The server can be stopped by pressing `CTRL-C`.
 
 ### Upkeep
 
-It can be updated and started by executing the scripts in `/home/steam/scripts`, `SystemUpdate.sh` and `StartServer.sh` (a symlink to the file located in the game directory).
+The game can be updated and started by executing the scripts in `/home/steam/scripts`, `SystemUpdate.sh` and `StartServer.sh` (a symlink to the file located in the game directory).
 
 A system upgrade script backs up the worlds, updates the system, updates the game, and restarts the system. The game server must be brought up by the user.
