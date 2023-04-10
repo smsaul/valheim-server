@@ -1,3 +1,11 @@
+## Prep
+
+Create a user to run `steamcmd` (`adduser -m steam`), give it a password, and give it `sudo`.
+
+Clone this repository onto /home/steam.
+
+Execute all scripts as `steam`.
+
 ## Save Data Locations
 
 Windows: `%userprofile%/AppData/LocalLow/IronGate/Valheim/Worlds`.
