@@ -20,7 +20,7 @@ It is run within `screen` rather than backgrounded because the intent is to auto
 
 ### Backups
 
-The user can download a copy of the world at any time. An Apache server facilitates this at `helsinki.valheim.saulnet.com/download`. 
+The user can download a copy of the world at the point of the last update at any time. An Apache server facilitates this at `helsinki.valheim.saulnet.com/download`. 
 
 ### Logs
 
@@ -30,10 +30,14 @@ Connection logs (Steam users): `~/logs/connections.txt`, symlink to `~/.steam/lo
 
 Server logs (game diag/errors): `~/logs/serverlog-<date>.txt`
 
-The server can be stopped by pressing `CTRL-C`.
-
 ### Upkeep
 
-The game can be updated and started by executing the scripts in `/home/steam/valheim-server/scripts`, `SystemUpdate.sh` and `StartServer.sh` (a symlink to the file located in the game directory).
+Run `scripts/valheim.sh` to start the server. It executes the game in a `screen` session.
 
-A system upgrade script backs up the worlds, updates the system, updates the game, and restarts the system. The game server must be brought up by the user.
+#### Updates
+
+The game and the system are updated at a single time by running `scritps/SystemUpdate.sh`. An administrator should log into the game and save the world before running the utility, and should save the worlds archive on local storage before continuing the utility.
+
+A system upgrade script backs up the worlds to the web `downloads` directory, updates the system, updates the game, and restarts the system. 
+
+The game server must be brought up by the administrator after the update reboot.
