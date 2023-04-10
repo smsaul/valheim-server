@@ -2,7 +2,10 @@
 
 
 #Backup worlds
-tar -cvf /var/www/html/downloads/worlds-$(date -I).tar /home/steam/.config/unity3d/IronGate/Valheim/worlds_local
+
+zip /var/www/html/downloads/worlds-$(date -I).tar /home/steam/.config/unity3d/IronGate/Valheim/worlds_local
+
+#tar -cvf /var/www/html/downloads/worlds-$(date -I).tar /home/steam/.config/unity3d/IronGate/Valheim/worlds_local
 
 #Prompt to continue after files are copied (Press any key...)
 
