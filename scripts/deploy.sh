@@ -11,9 +11,6 @@ cd /home/steam && git clone https://github.com/smsaul/valheim-server.git
 
 mkdir /home/steam/.config/unity3d/IronGate/Valheim/worlds_local
 
-cp /home/steam/valheim-server/worlds/* \
-   /home/steam/.config/unity3d/IronGate/Valheim/worlds_local
-
 /home/steam/valheim-server/scripts/InstallUpdate.sh
 
 sudo ufw allow 2346
