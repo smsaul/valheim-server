@@ -5,7 +5,7 @@ sudo apt install software-properties-common
 sudo add-apt-repository multiverse
 sudo dpkg --add-architecture i386
 sudo apt update
-sudo apt install lib32gcc1 steamcmd apache2
+sudo apt install lib32gcc-s1 steamcmd apache2
 
 cd /home/steam && git clone https://github.com/smsaul/valheim-server.git
 
