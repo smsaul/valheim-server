@@ -13,7 +13,7 @@ echo "Creating worlds folder..."
 mkdir -p /home/steam/.config/unity3d/IronGate/Valheim/worlds_local
 
 echo "Installing Valheim..."
-/home/steam/valheim-server/scripts/InstallUpdate.sh
+./InstallUpdate.sh
 
 echo "Firewall settings..."
 sudo ufw allow 2346
@@ -22,7 +22,7 @@ sudo ufw allow 'Apache Full'
 
 
 echo "Configuring web server..."
-sudo cp /home/steam/valheim-server/web/index.html /var/www/html
+sudo cp ../web/index.html /var/www/html
 sudo mkdir /var/www/html/downloads
 
 echo "Creating logs..."
