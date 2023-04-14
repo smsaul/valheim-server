@@ -1,11 +1,11 @@
 #!/bin/bash
 
 sudo apt update && sudo apt upgrade -y
-sudo apt install software-properties-common
+sudo apt install -y software-properties-common
 sudo add-apt-repository multiverse
 sudo dpkg --add-architecture i386
 sudo apt update
-sudo apt install lib32gcc-s1 steamcmd apache2
+sudo apt install -y lib32gcc-s1 steamcmd apache2 zip
 
 echo "Linking steamcmd executable..."
 ln -s /usr/games/steamcmd /home/steam/valheim-server/scripts/steamcmd
