@@ -16,8 +16,8 @@ echo "Installing Valheim..."
 ./InstallUpdate.sh
 
 echo "Firewall settings..."
-sudo ufw allow 2346
-sudo ufw allow 2347
+sudo ufw allow 2456
+sudo ufw allow 2457
 sudo ufw allow 'Apache Full'
 
 
@@ -27,6 +27,6 @@ sudo mkdir /var/www/html/downloads
 
 echo "Creating logs..."
 mkdir /home/steam/logs
-ln -s /home/steam/.steam/logs/connection_log_2346.txt /home/steam/logs/connections.txt
+ln -s /home/steam/.steam/logs/connection_log_2456.txt /home/steam/logs/connections.txt
 
 echo "You should really reboot."
